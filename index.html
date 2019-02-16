@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8/">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<title>Mariusz Nowak - Forms</title>
+	<meta name="description" content="Blog na temat ciekawych publikacji z dziedziny filozofii"/>
+	<meta name="keywords" content="HTML, New Tags, Philosophia"/>
+
+	<link rel="stylesheet" href="main.css" type="text/css"/>
+	
+	
+	<!--[if lt IE 9]>
+	<scripr src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	
+	<script>
+	</script>
+	
+</head>
+
+<body>
+
+	<header>
+		<h1>Wybierz swoją konfogurację samochodu.</h1>
+	</header>
+	
+	<main>
+	
+		<article>
+		
+			<form action="order.php" method="post" anctype="application/x-www-form-urlencoded">
+				<div class="row">	
+					<fieldset>
+						<legend>Rodzaj nadwozia</legend>
+						<div><label><input type="radio" value="1" name="nadwozie" checked> Hatchback</label></div>
+						<div><label><input type="radio" value="2" name="nadwozie"> Kabriolet</label></div>
+						<div><label><input type="radio" value="3" name="nadwozie"> Kombi</label></div>
+					</fieldset>
+				</div>
+				
+				<div class="row">	
+					<label for="silnik">Rodzaj silnika</label>
+					<select id="silnik">
+						<option value="w">Wysokoprężny</option>
+						<option value="b" selected>Benzynowy</option>
+						<option value="e">Elektryczny</option>
+						<option value="h">Hybryda</option>
+					</select>
+				</div>
+				
+				<div class="row">
+					<fieldset>
+						<legend>Opcje dodatkowe</legend>
+						<div class="col">
+							<div><label><input type="checkbox" value="1" name="wyp[]" checked disabled>Klimatyzacja</label></div>
+							<div><label><input type="checkbox" value="2" name="wyp[]"checked disabled>ABS+ESP</label></div>
+							<div><label><input type="checkbox" value="3" name="wyp[]">Tempomat</label></div>
+							<div><label><input type="checkbox" value="4" name="wyp[]">Tylny spojler</label></div>
+						</div>
+						
+						<div class="col">
+							<div><label><input type="checkbox" value="5" name="wyp[]">Radio bluetooth</label></div>
+							<div><label><input type="checkbox" value="6" name="wyp[]">Reflektory przeciwmłogowe</label></div>
+							<div><label><input type="checkbox" value="7" name="wyp[]">Przyciemniane szyby tylne</label></div>
+							<div><label><input type="checkbox" value="8" name="wyp[]">Czujniki parkowania</label></div>
+						</div>
+						
+						<div class="col">
+							<div><label><input type="checkbox" value="9" name="wyp[]">Podfrzewane fotele</label></div>
+							<div><label><input type="checkbox" value="10" name="wyp[]">Składane lusterka</label></div>
+							<div><label><input type="checkbox" value="11" name="wyp[]">Światła LED do jazdy dziennej</label></div>
+							<div><label><input type="checkbox" value="12" name="wyp[]">Tapicerka skórzana</label></div>
+						</div>
+					</fieldset>
+				</div>
+					
+				<div class="row">	
+						<label for="choinka">Jakie choinki zapachowe</label>
+						<div style="margin-top: 10px">
+							<select id="choinka" name="chinka[]" multiple size="4">
+								<option value="k">Kokosowa</option>
+								<option value="c" selected>Cytrynowa</option>
+								<option value="t">Truskawkowa</option>
+								<option value="b">Brzoskwiniowa</option>
+							</select>
+						</div>
+				</div>
+				
+				<div class="row">
+					<label>Imię <input type="text" name="imie" placeholder="Jak masz na imię?"></label>
+					<label>Hasło <input type="password" name="haslo"></label>
+					<label>Szukaj <input type="search" name="szukaj"></label>
+				</div>
+				
+				<div class="row">
+					<label>Ile Kluczyków <input type="number" name="kluczyk" step="2"></label>
+				</div>
+				
+				<div class="row">
+					<label>Potwierdź zamówienie <input type="submit" value="Zamawiam"></label>
+					<input type="button" value="Zamawiam">
+					<button type="button">Zamawiam!</button>
+				</div>
+
+				
+			</form>	
+		</article>
+	</main>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

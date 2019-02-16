@@ -1,0 +1,28 @@
+﻿body
+{
+	margin: 10;
+	padding: 0px 60 px;
+	background-color: #29201B;
+	color: #efefef;
+	font-family: "Open Sans" , sans-serif;
+	font-size: 17px;
+}
+
+h1
+{
+	font-size: 42px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.row
+{
+	margin-bottom: 20px;
+}
+
+.col
+{
+	float: left;
+	margin-right: 20px;
+}
